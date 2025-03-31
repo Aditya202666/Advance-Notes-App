@@ -6,7 +6,7 @@ import { v4 } from "uuid";
 import { useNavigate } from "react-router-dom";
 
 const NoteCard = ({noteData}) => {
-  const { removeNote, getNote,deleteTag } = useContext(NotesContext);
+  const { removeNote, getNote, deleteTag } = useContext(NotesContext);
 
   const navigate = useNavigate();
 
@@ -28,8 +28,8 @@ const NoteCard = ({noteData}) => {
   };
 
   return (
-    <div className="shadow shadow-[#ff4ea4] rounded-lg _100  p-2 mb-2  relative overflow-hidden  ">
-      <h1 className="font-semibold">{noteData.heading}</h1>
+    <div className="w-[320px] h-fit shadow shadow-[#ff4ea4] rounded-lg _100  p-2 mb-2  relative overflow-hidden  ">
+      <h1 className="font-semibold line-clamp-1">{noteData.heading}</h1>
       <img
         className="w-5 absolute right-7 top-1 hover:scale-125 transition-all duration-200 cursor-pointer "
         onClick={handleEditNote}

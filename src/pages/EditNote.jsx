@@ -61,7 +61,7 @@ const EditNote = () => {
         </div>
         <div className=" ">
           <textarea
-            className="w-full shadow-sm shadow-[#ff4ea4] outline-none p-2 rounded-lg "
+            className="w-full resize-none shadow-sm shadow-[#ff4ea4] outline-none p-2 rounded-lg "
             rows={16}
             value={note.para}
             name="para"
